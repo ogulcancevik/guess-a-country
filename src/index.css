@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide Mapbox logo */
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+.mapboxgl-canvas {
+  cursor: pointer;
+}
