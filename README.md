@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Guess a country
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"Guess the Country" is an interactive application that challenges users to identify countries by clicking on a map. Users are presented with a world map, and they need to click on the correct location based on given flag. The app provides immediate feedback, indicating whether the guess is correct or incorrect.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To use this project, you need to have the following installed:
 
-## Expanding the ESLint configuration
+- Node.js 16 or higher
+- NPM or Yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the project to your computer or download it as a ZIP file.
+2. Navigate to the project folder in your terminal.
+3. Run the following command to install the project dependencies:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```
+   npm install
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   or
+
+   ```
+   yarn
+   ```
+
+## Usage
+
+1. Start the development server by running the following command:
+
+   ```
+   npm start dev
+   ```
+
+   or
+
+   ```
+   yarn start
+   ```
+2. You have to get mapbox access token from https://docs.mapbox.com/help/getting-started/access-tokens
+3. Put your mapbox access token to .env file
+4. Open your web browser and navigate to `http://localhost:5173`.
+5. Click on the map to guess the country based on the given flag.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+## Contact
+
+If you have any questions or feedback, please send an email to hello@ogulcancevik.com.
